@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <div class="wrapper">
+        <div class="main-wrapper">
+            <img src="./images/team-blobs.avif" alt="team 3d blobs" width="230px" height="300px">
+            <div class="content-wrapper">
+                <h2 class="content-title">Level up the whole team✨</h2>
+                <p class="content-text">Train multiple devs at your organization with <b>Team Licenses.</b> Receive a discount when you buy at least 4 copies, and manage them through our custom Team Administrator dashboard.</p>
+                <button class="content-btn">Learn More</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal hidden">
+        <button class="modal-x-btn">✖️</button>
+        <h3 class="modal-title">Team Licenses</h3>
+        <p class="modal-text">Purchase multiple licenses to level up the entire team! Each team member will receive full access to the “Ultimate” package of CSS for JavaScript Developers.</p>
+
+        <div class="modal-line"></div>
+        <input class="modal-input" type="number" placeholder="0">
+       
+        <button class="modal-buy-btn">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front text"> Purchase License</span>
+        </button>
+    
+    </div>
+
+    </div>
+
+    <div class="overlay hidden"></div>
+    <script src="./app.js"></script>
+</body>
+</html>
