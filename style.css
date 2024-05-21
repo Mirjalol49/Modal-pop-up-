@@ -286,8 +286,13 @@ body {
 } */
 
 @media screen and (max-width: 500px) {
+
+    .modal-input {
+        width: 100%;
+    }
+
     .modal {
-        max-width: 90%;
+        width    : 90%;
         height   : auto;
         padding  : 1rem;
         top      : 50%;
@@ -319,15 +324,5 @@ body {
 
     .modal-x-btn {
         font-size: 15px;
-    }
-}
-
-@media screen and (max-width: 350px) {
-    .modal {
-        width    : 100%;
-        height   : auto;
-        padding  : 1rem;
-        top      : 50%;
-        transform: translate(-50%, -50%);
     }
 }
