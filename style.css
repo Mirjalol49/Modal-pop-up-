@@ -70,13 +70,7 @@ body {
 
 }
 
-@media screen and (max-width: 500px) {
-    .main-wrapper {
-        display       : flex;
-        flex-direction: column;
 
-    }
-}
 
 
 
@@ -99,6 +93,7 @@ body {
 }
 
 .content-text {
+    width      : fit-content;
     line-height: 1.4;
 }
 
@@ -320,5 +315,18 @@ body {
 
     .modal-x-btn {
         font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main-wrapper {
+        display       : flex;
+        flex-direction: column;
+
+    }
+
+    .content-wrapper {
+        margin-left: 0;
+
     }
 }
