@@ -55,15 +55,14 @@ body {
 }
 
 .container {
-    width    : 100%;
-    max-width: 1400px;
-    margin   : 0 auto;
-    padding  : 0 20px;
-
+    width          : 100%;
+    max-width      : 1400px;
+    margin         : 0 auto;
+    padding        : 0 20px;
     display        : flex;
     justify-content: center;
     align-items    : center;
-    height         : 100%;
+    height         : 100vh;
 }
 
 
@@ -279,9 +278,56 @@ body {
 
 /* Media Query modal */
 
+/* @media screen and (max-width: 500px) {
+    .modal {
+        max-width: 100%;
+        height   : 90%;
+    }
+} */
+
 @media screen and (max-width: 500px) {
     .modal {
-        width : 100%;
-        height: 80%;
+        max-width: 90%;
+        height   : auto;
+        padding  : 1rem;
+        top      : 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .modal-title {
+        font-size: 1.5rem;
+    }
+
+    .modal-text {
+        font-size: 1rem;
+    }
+
+    .modal-input {
+        font-size: 1rem;
+    }
+
+    .modal-buy-btn .front {
+        padding  : 10px 20px;
+        font-size: 0.875rem;
+    }
+
+    .modal-buy-btn {
+        margin-top : 30px;
+        width      : 100%;
+        margin-left: 0;
+    }
+
+    .modal-x-btn {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .modal {
+        width    : 100%;
+        height   : auto;
+        padding  : 1rem;
+        top      : 50%;
+        transform: translate(-50%, -50%);
     }
 }
